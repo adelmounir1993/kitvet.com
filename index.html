@@ -3,25 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KitVet.com is For Sale | Premium Domain</title>
+    
+    <!-- SEO & METADATA -->
+    <title>KitVet.com - Premium Veterinary Domain For Sale</title>
+    <meta name="description" content="Secure KitVet.com today! The ultimate premium domain for veterinary clinics, pet care startups, and animal health apps. Short, authoritative, and memorable.">
+    <meta name="keywords" content="KitVet, domain for sale, veterinary domain, pet care, animal health, premium domain, brandable name">
+    <meta name="author" content="KitVet Owner">
+    
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="KitVet.com - The Perfect Name for Your Vet Business">
+    <meta property="og:description" content="Own the category-defining domain for the pet industry. 40% OFF for a limited time.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068&auto=format&fit=crop">
+    <meta property="og:url" content="https://kitvet.com/">
+    
+    <!-- STYLES -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --primary: #25D366; /* WhatsApp */
-            --secondary: #007bff; /* Email */
-            --gold: #FFD700; /* GoDaddy */
+            --primary: #25D366; /* WhatsApp Green */
+            --secondary: #007bff; /* Email Blue */
+            --gold: #FFD700; /* Premium Gold */
             --gmail: #EA4335;
             --outlook: #0078D4;
             --dark: #1e1e2d;
             --light: #ffffff;
             --glass: rgba(255, 255, 255, 0.1);
             --border: rgba(255, 255, 255, 0.2);
-            /* Purple for Premium Badge */
+            /* Badges Colors */
             --badge-purple: #D8B4FE; 
             --shadow-purple: rgba(216, 180, 254, 0.6);
-            /* Red for Discount Badge */
             --badge-red: #ff4757;
             --shadow-red: rgba(255, 71, 87, 0.6);
         }
@@ -37,23 +49,23 @@
             background-color: #000;
         }
 
-        /* --- BACKGROUND SLIDESHOW --- */
+        /* SLIDESHOW BACKGROUND */
         .slideshow { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; overflow: hidden; }
         .slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; opacity: 0; transform: scale(1); transition: opacity 1.5s ease-in-out; }
         .slide.active { opacity: 1; animation: kenBurns 20s infinite alternate; }
         .overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); z-index: -1; }
         @keyframes kenBurns { 0% { transform: scale(1); } 100% { transform: scale(1.2); } }
 
-        /* --- LANGUAGE BAR --- */
+        /* LANGUAGE BAR */
         .lang-bar { padding: 15px; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; background: rgba(0,0,0,0.3); backdrop-filter: blur(5px); z-index: 10; }
         .lang-btn { background: transparent; border: 1px solid var(--border); color: var(--light); padding: 5px 12px; cursor: pointer; border-radius: 20px; font-size: 0.8rem; transition: all 0.3s ease; }
         .lang-btn:hover, .lang-btn.active { background: var(--light); color: var(--dark); }
 
-        /* --- CONTAINER --- */
+        /* MAIN CONTAINER */
         .container { flex: 1; display: flex; align-items: center; justify-content: center; padding: 20px; z-index: 1; }
         .card { background: var(--glass); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid var(--border); border-radius: 24px; padding: 40px; max-width: 900px; width: 100%; text-align: center; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); animation: floatUp 1s ease-out; position: relative; }
 
-        /* --- LOGO --- */
+        /* LOGO */
         .logo-container { display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 20px; }
         .logo-icon { width: 60px; height: 60px; background: linear-gradient(135deg, #4facfe, #00f2fe); border-radius: 15px; display: flex; align-items: center; justify-content: center; font-size: 30px; color: white; box-shadow: 0 0 20px rgba(79, 172, 254, 0.5); position: relative; }
         .logo-icon i { filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); }
@@ -61,32 +73,20 @@
         h1.domain-name { font-size: 4rem; font-weight: 900; background: linear-gradient(to right, #ffffff, #a8c0ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: -2px; text-transform: lowercase; line-height: 1; }
         h1.domain-name span { color: #4facfe; -webkit-text-fill-color: #4facfe; }
 
-        /* --- BADGES (DUAL PULSE STYLE) --- */
+        /* BADGES */
         .badges-row { display: flex; justify-content: center; gap: 15px; margin-bottom: 30px; flex-wrap: wrap; }
-        
-        /* 1. Purple Badge (Premium Domain) - Pulsing Purple */
         .status-badge { 
-            background: var(--badge-purple); 
-            color: #000; /* Black text for contrast like the image */
-            padding: 6px 18px; border-radius: 50px; 
+            background: var(--badge-purple); color: #000; padding: 6px 18px; border-radius: 50px; 
             font-weight: 800; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;
-            box-shadow: 0 0 15px var(--shadow-purple);
-            border: none;
-            animation: pulsePurple 2s infinite; 
+            box-shadow: 0 0 15px var(--shadow-purple); animation: pulsePurple 2s infinite; 
         }
-
-        /* 2. Red Badge (Discount) - Pulsing Red */
         .discount-badge { 
-            background: var(--badge-red); 
-            color: white; 
-            padding: 6px 18px; border-radius: 50px; 
+            background: var(--badge-red); color: white; padding: 6px 18px; border-radius: 50px; 
             font-weight: 800; font-size: 0.9rem; text-transform: uppercase; 
-            box-shadow: 0 0 15px var(--shadow-red); 
-            animation: pulseRed 2s infinite; 
-            display: flex; align-items: center; gap: 5px; 
+            box-shadow: 0 0 15px var(--shadow-red); animation: pulseRed 2s infinite; display: flex; align-items: center; gap: 5px; 
         }
 
-        /* --- CONTENT --- */
+        /* TEXT & GRID */
         .pitch-text { font-size: 1.25rem; line-height: 1.6; margin-bottom: 40px; color: #f0f0f0; max-width: 700px; margin-left: auto; margin-right: auto; }
         .analysis-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin: 40px 0; text-align: left; }
         .analysis-item { background: rgba(0,0,0,0.3); padding: 20px; border-radius: 15px; border-left: 4px solid var(--primary); transition: transform 0.3s; }
@@ -94,7 +94,7 @@
         .analysis-item h3 { font-size: 0.8rem; color: #ccc; margin-bottom: 5px; text-transform: uppercase; }
         .analysis-item p { font-size: 1.1rem; font-weight: 600; }
 
-        /* --- BUTTONS --- */
+        /* ACTIONS */
         .actions { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; flex-direction: column; }
         .main-cta { background: linear-gradient(45deg, #FFD700, #FFA500); color: #000; font-weight: 900; font-size: 1.3rem; padding: 20px 40px; border-radius: 50px; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 0 30px rgba(255, 215, 0, 0.4); transition: transform 0.2s, box-shadow 0.2s; width: 100%; max-width: 500px; margin: 0 auto; border: none; cursor: pointer; }
         .main-cta:hover { transform: scale(1.02); box-shadow: 0 0 50px rgba(255, 215, 0, 0.6); }
@@ -106,24 +106,20 @@
         .btn-email { background: rgba(0, 123, 255, 0.2); border: 1px solid var(--secondary); color: var(--secondary); }
         .btn-email:hover { background: var(--secondary); color: white; }
 
-        /* --- MODALS --- */
+        /* MODALS */
         .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: center; z-index: 1000; opacity: 0; visibility: hidden; transition: all 0.3s ease; }
         .modal-overlay.active { opacity: 1; visibility: visible; }
         .modal-content { background: rgba(30, 30, 45, 0.95); border: 1px solid rgba(255, 255, 255, 0.1); padding: 40px; border-radius: 20px; width: 90%; max-width: 450px; text-align: center; transform: scale(0.8); transition: all 0.3s ease; position: relative; box-shadow: 0 20px 50px rgba(0,0,0,0.6); }
         .modal-overlay.active .modal-content { transform: scale(1); }
         .close-modal { position: absolute; top: 15px; right: 20px; font-size: 1.5rem; color: #666; cursor: pointer; transition: color 0.2s; }
         .close-modal:hover { color: #fff; }
-        
         .info-box { background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 12px; margin: 20px 0; display: flex; align-items: center; justify-content: space-between; border: 1px solid rgba(255,255,255,0.1); gap: 10px; }
         .info-text { font-family: monospace; font-size: 1.1rem; color: #fff; overflow-wrap: anywhere; text-align: left; }
         .copy-btn { background: transparent; border: 1px solid #555; color: #ccc; padding: 8px 12px; border-radius: 8px; cursor: pointer; font-size: 0.85rem; transition: all 0.2s; white-space: nowrap; }
         .copy-btn:hover { border-color: #fff; color: #fff; }
-
         .action-btn-full { width: 100%; padding: 15px; border-radius: 12px; font-weight: bold; display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; margin-top: 10px; transition: transform 0.2s; }
         .action-btn-full:hover { transform: scale(1.02); }
         .bg-wa { background: #25D366; color: white; }
-        
-        /* New Webmail Buttons */
         .webmail-options { display: flex; gap: 10px; margin-top: 20px; }
         .webmail-btn { flex: 1; padding: 12px; border-radius: 10px; font-weight: 600; font-size: 0.9rem; text-decoration: none; color: white; display: flex; align-items: center; justify-content: center; gap: 5px; transition: opacity 0.2s; }
         .webmail-btn:hover { opacity: 0.9; }
@@ -132,20 +128,8 @@
         .bg-default { background: #444; border: 1px solid #666; }
 
         @keyframes floatUp { from { opacity: 0; transform: translateY(50px); } to { opacity: 1; transform: translateY(0); } }
-        
-        /* Red Pulse (For 40% Off) */
-        @keyframes pulseRed { 
-            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.7); } 
-            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(255, 71, 87, 0); } 
-            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 71, 87, 0); } 
-        }
-
-        /* Purple Pulse (For Premium Domain) */
-        @keyframes pulsePurple { 
-            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(216, 180, 254, 0.7); } 
-            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(216, 180, 254, 0); } 
-            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(216, 180, 254, 0); } 
-        }
+        @keyframes pulseRed { 0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.7); } 70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(255, 71, 87, 0); } 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 71, 87, 0); } }
+        @keyframes pulsePurple { 0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(216, 180, 254, 0.7); } 70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(216, 180, 254, 0); } 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(216, 180, 254, 0); } }
 
         @media (max-width: 768px) {
             h1.domain-name { font-size: 3rem; }
@@ -159,7 +143,6 @@
 </head>
 <body>
 
-    <!-- Slideshow -->
     <div class="slideshow">
         <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068&auto=format&fit=crop');"></div>
         <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1548767797-d8c844163c4c?q=80&w=2070&auto=format&fit=crop');"></div>
@@ -168,7 +151,6 @@
     </div>
     <div class="overlay"></div>
 
-    <!-- Lang Bar -->
     <div class="lang-bar">
         <button class="lang-btn active" onclick="setLang('en')">English</button>
         <button class="lang-btn" onclick="setLang('es')">Español</button>
@@ -180,7 +162,6 @@
         <button class="lang-btn" onclick="setLang('ru')">Русский</button>
     </div>
 
-    <!-- Main -->
     <div class="container">
         <div class="card">
             <div class="logo-container">
@@ -192,9 +173,7 @@
             </div>
 
             <div class="badges-row">
-                <!-- Premium Domain: Purple & Pulsing -->
                 <span class="status-badge" id="statusBadge">Premium Domain</span>
-                <!-- Discount: Red & Pulsing -->
                 <span class="discount-badge"><i class="fas fa-tag"></i> <span id="discountBadge">40% OFF • Ends in 30 Days</span></span>
             </div>
             
@@ -284,6 +263,7 @@
     </div>
 
     <script>
+        // SLIDESHOW
         const slides = document.querySelectorAll('.slide');
         let currentSlide = 0;
         setInterval(() => {
@@ -292,6 +272,7 @@
             slides[currentSlide].classList.add('active');
         }, 5000);
 
+        // MODALS
         function openModal(type) { document.getElementById(type + 'Modal').classList.add('active'); }
         function closeModal(type, event) { if (event.target === document.getElementById(type + 'Modal')) { document.getElementById(type + 'Modal').classList.remove('active'); } }
         function closeModalBtn(type) { document.getElementById(type + 'Modal').classList.remove('active'); }
@@ -306,11 +287,13 @@
             });
         }
 
+        // TRANSLATIONS
         const translations = {
             en: {
                 status: "Premium Domain", discount: "40% OFF • Ends in 30 Days",
                 pitch: "The ultimate digital asset for the veterinary and pet care industry. Short, authoritative, and globally recognized.",
-                l_type: "Type", v_type: "Brandable Keyword", l_len: "Length", v_len: "6 Letters", l_ext: "Extension", v_ext: ".COM (King)", l_pot: "Potential", v_pot: "Global Brand",
+                l_type: "Type", v_type: "Brandable Keyword", l_len: "Length", v_len: "6 Letters", 
+                l_ext: "Extension", v_ext: ".COM (King)", l_pot: "Potential", v_pot: "Global Brand",
                 btn_go: "Buy Now on GoDaddy", btn_wa: "Negotiate on WhatsApp", btn_em: "Send an Offer",
                 wa_t: "Contact on WhatsApp", wa_d: "Chat directly for a quick deal.", wa_o: "Open WhatsApp",
                 em_t: "Send Your Offer", em_d: "Send your official offer via email.", copy: "Copy"
@@ -318,7 +301,8 @@
             es: {
                 status: "Dominio Premium", discount: "40% DCTO • Válido 30 Días",
                 pitch: "El activo digital definitivo para la industria veterinaria. Corto, autoritario y reconocido mundialmente.",
-                l_type: "Tipo", v_type: "Marca Global", l_len: "Longitud", v_len: "6 Letras", l_ext: "Extensión", v_ext: ".COM (El Rey)", l_pot: "Potencial", v_pot: "Líder de Mercado",
+                l_type: "Tipo", v_type: "Marca Global", l_len: "Longitud", v_len: "6 Letras",
+                l_ext: "Extensión", v_ext: ".COM (El Rey)", l_pot: "Potencial", v_pot: "Líder de Mercado",
                 btn_go: "Comprar en GoDaddy", btn_wa: "Negociar en WhatsApp", btn_em: "Enviar Oferta",
                 wa_t: "Contacto WhatsApp", wa_d: "Chatea directamente para un trato rápido.", wa_o: "Abrir WhatsApp",
                 em_t: "Envíe su Oferta", em_d: "Envíe su oferta oficial por correo.", copy: "Copiar"
@@ -326,7 +310,8 @@
             ar: {
                 status: "نطاق مميز", discount: "خصم 40% • ينتهي خلال شهر",
                 pitch: "الأصل الرقمي الأمثل لقطاع الطب البيطري. قصير، قوي، ومعترف به عالمياً.",
-                l_type: "النوع", v_type: "علامة تجارية", l_len: "الطول", v_len: "6 حروف", l_ext: "الامتداد", v_ext: ".COM (الأقوى)", l_pot: "الإمكانات", v_pot: "براند عالمي",
+                l_type: "النوع", v_type: "علامة تجارية", l_len: "الطول", v_len: "6 حروف",
+                l_ext: "الامتداد", v_ext: ".COM (الأقوى)", l_pot: "الإمكانات", v_pot: "براند عالمي",
                 btn_go: "اشترِ الآن عبر GoDaddy", btn_wa: "تواصل واتساب", btn_em: "أرسل عرضك",
                 wa_t: "تواصل عبر واتساب", wa_d: "تحدث معنا مباشرة لإنهاء الصفقة.", wa_o: "فتح واتساب",
                 em_t: "أرسل عرضك المالي", em_d: "أرسل عرضك الرسمي عبر البريد.", copy: "نسخ"
@@ -334,7 +319,8 @@
             fr: {
                 status: "Domaine Premium", discount: "-40% • Valide 30 Jours",
                 pitch: "L'actif numérique ultime pour l'industrie vétérinaire. Court, autoritaire et mondial.",
-                l_type: "Type", v_type: "Marquable", l_len: "Longueur", v_len: "6 Lettres", l_ext: "Extension", v_ext: ".COM (Le Roi)", l_pot: "Potentiel", v_pot: "Marque Mondiale",
+                l_type: "Type", v_type: "Marquable", l_len: "Longueur", v_len: "6 Lettres",
+                l_ext: "Extension", v_ext: ".COM (Le Roi)", l_pot: "Potentiel", v_pot: "Marque Mondiale",
                 btn_go: "Acheter sur GoDaddy", btn_wa: "WhatsApp", btn_em: "Faire une Offre",
                 wa_t: "Contact WhatsApp", wa_d: "Discutez pour une offre rapide.", wa_o: "Ouvrir WhatsApp",
                 em_t: "Envoyez Votre Offre", em_d: "Envoyez votre offre par email.", copy: "Copier"
@@ -342,7 +328,8 @@
             de: {
                 status: "Premium-Domain", discount: "40% RABATT • 30 Tage",
                 pitch: "Das ultimative digitale Asset für die Veterinärmedizin. Kurz und weltweit anerkannt.",
-                l_type: "Typ", v_type: "Markenfähig", l_len: "Länge", v_len: "6 Buchstaben", l_ext: "Endung", v_ext: ".COM (König)", l_pot: "Potenzial", v_pot: "Globale Marke",
+                l_type: "Typ", v_type: "Markenfähig", l_len: "Länge", v_len: "6 Buchstaben",
+                l_ext: "Endung", v_ext: ".COM (König)", l_pot: "Potenzial", v_pot: "Globale Marke",
                 btn_go: "Kaufen bei GoDaddy", btn_wa: "WhatsApp Kontakt", btn_em: "Angebot Senden",
                 wa_t: "WhatsApp Kontakt", wa_d: "Direkt chatten für schnellen Deal.", wa_o: "WhatsApp Öffnen",
                 em_t: "Senden Sie Ihr Angebot", em_d: "Senden Sie Ihr Angebot per E-Mail.", copy: "Kopieren"
@@ -350,7 +337,8 @@
             pt: {
                 status: "Domínio Premium", discount: "40% OFF • Válido 30 Dias",
                 pitch: "O ativo digital definitivo para veterinária. Curto, autoritário e reconhecido mundialmente.",
-                l_type: "Tipo", v_type: "Marca", l_len: "Tamanho", v_len: "6 Letras", l_ext: "Extensão", v_ext: ".COM (O Rei)", l_pot: "Potencial", v_pot: "Marca Global",
+                l_type: "Tipo", v_type: "Marca", l_len: "Tamanho", v_len: "6 Letras",
+                l_ext: "Extensão", v_ext: ".COM (O Rei)", l_pot: "Potencial", v_pot: "Marca Global",
                 btn_go: "Comprar no GoDaddy", btn_wa: "WhatsApp", btn_em: "Enviar Oferta",
                 wa_t: "Contato WhatsApp", wa_d: "Converse diretamente.", wa_o: "Abrir WhatsApp",
                 em_t: "Envie Sua Oferta", em_d: "Envie sua oferta por e-mail.", copy: "Copiar"
@@ -358,7 +346,8 @@
             zh: {
                 status: "优质域名", discount: "七折优惠 • 限时30天",
                 pitch: "兽医和宠物护理行业的终极数字资产。简短、权威、全球认可。",
-                l_type: "类型", v_type: "品牌词", l_len: "长度", v_len: "6个字母", l_ext: "后缀", v_ext: ".COM (王者)", l_pot: "潜力", v_pot: "全球品牌",
+                l_type: "类型", v_type: "品牌词", l_len: "长度", v_len: "6个字母",
+                l_ext: "后缀", v_ext: ".COM (王者)", l_pot: "潜力", v_pot: "全球品牌",
                 btn_go: "在 GoDaddy 购买", btn_wa: "WhatsApp 洽谈", btn_em: "发送报价",
                 wa_t: "WhatsApp 联系", wa_d: "直接聊天以快速达成交易。", wa_o: "打开 WhatsApp",
                 em_t: "发送您的报价", em_d: "通过电子邮件发送您的报价。", copy: "复制"
@@ -366,7 +355,8 @@
             ru: {
                 status: "Премиум Домен", discount: "-40% • Еще 30 Дней",
                 pitch: "Лучший цифровой актив для ветеринарии. Короткий и авторитетный.",
-                l_type: "Тип", v_type: "Бренд", l_len: "Длина", v_len: "6 Букв", l_ext: "Зона", v_ext: ".COM (Король)", l_pot: "Потенциал", v_pot: "Мировой Бренд",
+                l_type: "Тип", v_type: "Бренд", l_len: "Длина", v_len: "6 Букв",
+                l_ext: "Зона", v_ext: ".COM (Король)", l_pot: "Потенциал", v_pot: "Мировой Бренд",
                 btn_go: "Купить на GoDaddy", btn_wa: "WhatsApp", btn_em: "Предложить цену",
                 wa_t: "Контакт WhatsApp", wa_d: "Чат для быстрой сделки.", wa_o: "Открыть WhatsApp",
                 em_t: "Отправьте предложение", em_d: "Отправьте предложение по email.", copy: "Копировать"
@@ -399,5 +389,4 @@
         }
     </script>
 </body>
-
 </html>
