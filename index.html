@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="zZ-pdN3u1RoQQEwRXeUVSE8GFFjivInTNa-UkICVqP8" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -10,7 +9,12 @@
     <meta name="description" content="Secure KitVet.com today! The ultimate premium domain for veterinary clinics, pet care startups, and animal health apps. Short, authoritative, and memorable.">
     <meta name="keywords" content="KitVet, domain for sale, veterinary domain, pet care, animal health, premium domain, brandable name">
     <meta name="author" content="KitVet Owner">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://kitvet.com">
     
+    <!-- FAVICON (PAW ICON) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
+
     <!-- OPEN GRAPH -->
     <meta property="og:title" content="KitVet.com - The Perfect Name for Your Vet Business">
     <meta property="og:description" content="Own the category-defining domain for the pet industry. 40% OFF for a limited time.">
@@ -76,11 +80,14 @@
 
         /* BADGES */
         .badges-row { display: flex; justify-content: center; gap: 15px; margin-bottom: 30px; flex-wrap: wrap; }
+        
+        /* Purple Pulse (Premium) */
         .status-badge { 
             background: var(--badge-purple); color: #000; padding: 6px 18px; border-radius: 50px; 
             font-weight: 800; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;
             box-shadow: 0 0 15px var(--shadow-purple); animation: pulsePurple 2s infinite; 
         }
+        /* Red Pulse (Discount) */
         .discount-badge { 
             background: var(--badge-red); color: white; padding: 6px 18px; border-radius: 50px; 
             font-weight: 800; font-size: 0.9rem; text-transform: uppercase; 
@@ -114,13 +121,16 @@
         .modal-overlay.active .modal-content { transform: scale(1); }
         .close-modal { position: absolute; top: 15px; right: 20px; font-size: 1.5rem; color: #666; cursor: pointer; transition: color 0.2s; }
         .close-modal:hover { color: #fff; }
+        
         .info-box { background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 12px; margin: 20px 0; display: flex; align-items: center; justify-content: space-between; border: 1px solid rgba(255,255,255,0.1); gap: 10px; }
         .info-text { font-family: monospace; font-size: 1.1rem; color: #fff; overflow-wrap: anywhere; text-align: left; }
         .copy-btn { background: transparent; border: 1px solid #555; color: #ccc; padding: 8px 12px; border-radius: 8px; cursor: pointer; font-size: 0.85rem; transition: all 0.2s; white-space: nowrap; }
         .copy-btn:hover { border-color: #fff; color: #fff; }
+        
         .action-btn-full { width: 100%; padding: 15px; border-radius: 12px; font-weight: bold; display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; margin-top: 10px; transition: transform 0.2s; }
         .action-btn-full:hover { transform: scale(1.02); }
         .bg-wa { background: #25D366; color: white; }
+        
         .webmail-options { display: flex; gap: 10px; margin-top: 20px; }
         .webmail-btn { flex: 1; padding: 12px; border-radius: 10px; font-weight: 600; font-size: 0.9rem; text-decoration: none; color: white; display: flex; align-items: center; justify-content: center; gap: 5px; transition: opacity 0.2s; }
         .webmail-btn:hover { opacity: 0.9; }
@@ -152,6 +162,7 @@
     </div>
     <div class="overlay"></div>
 
+    <!-- Lang Bar -->
     <div class="lang-bar">
         <button class="lang-btn active" onclick="setLang('en')">English</button>
         <button class="lang-btn" onclick="setLang('es')">Español</button>
@@ -163,6 +174,7 @@
         <button class="lang-btn" onclick="setLang('ru')">Русский</button>
     </div>
 
+    <!-- Main -->
     <div class="container">
         <div class="card">
             <div class="logo-container">
@@ -183,6 +195,7 @@
                 Short, authoritative, and globally recognized. Secure your market dominance today.
             </p>
 
+            <!-- Analysis Grid -->
             <div class="analysis-grid">
                 <div class="analysis-item">
                     <h3 id="labelType">Domain Type</h3>
@@ -347,8 +360,7 @@
             zh: {
                 status: "优质域名", discount: "七折优惠 • 限时30天",
                 pitch: "兽医和宠物护理行业的终极数字资产。简短、权威、全球认可。",
-                l_type: "类型", v_type: "品牌词", l_len: "长度", v_len: "6个字母",
-                l_ext: "后缀", v_ext: ".COM (王者)", l_pot: "潜力", v_pot: "全球品牌",
+                l_type: "类型", v_type: "品牌词", l_len: "长度", v_len: "6个字母", l_ext: "后缀", v_ext: ".COM (王者)", l_pot: "潜力", v_pot: "全球品牌",
                 btn_go: "在 GoDaddy 购买", btn_wa: "WhatsApp 洽谈", btn_em: "发送报价",
                 wa_t: "WhatsApp 联系", wa_d: "直接聊天以快速达成交易。", wa_o: "打开 WhatsApp",
                 em_t: "发送您的报价", em_d: "通过电子邮件发送您的报价。", copy: "复制"
@@ -356,8 +368,7 @@
             ru: {
                 status: "Премиум Домен", discount: "-40% • Еще 30 Дней",
                 pitch: "Лучший цифровой актив для ветеринарии. Короткий и авторитетный.",
-                l_type: "Тип", v_type: "Бренд", l_len: "Длина", v_len: "6 Букв",
-                l_ext: "Зона", v_ext: ".COM (Король)", l_pot: "Потенциал", v_pot: "Мировой Бренд",
+                l_type: "Тип", v_type: "Бренд", l_len: "Длина", v_len: "6 Букв", l_ext: "Зона", v_ext: ".COM (Король)", l_pot: "Потенциал", v_pot: "Мировой Бренд",
                 btn_go: "Купить на GoDaddy", btn_wa: "WhatsApp", btn_em: "Предложить цену",
                 wa_t: "Контакт WhatsApp", wa_d: "Чат для быстрой сделки.", wa_o: "Открыть WhatsApp",
                 em_t: "Отправьте предложение", em_d: "Отправьте предложение по email.", copy: "Копировать"
@@ -391,4 +402,3 @@
     </script>
 </body>
 </html>
-
